@@ -4,7 +4,7 @@ This project is a simple Spring Boot web application running Java 21 and a pre-r
 
 ## Running
 
-Enable or disable the virtual threads support within [application.yml](src/main/resources/application.yml)
+Enable or disable the virtual threads support within [application.properties](src/main/resources/application.properties)
 
 ### Web Application
 - Install Java 21
@@ -115,5 +115,9 @@ running (0m42.0s), 0000/1000 VUs, 17980 complete and 0 interrupted iterations
 contacts ✓ [======================================] 0000/1000 VUs  40s
 ```
 
-## Overall
+## Summary
 In our simplistic example, Platform threads executed 8,380 requests with an average duration of 3.47s. Virtual threads outperformed Platform threads by executing 17,980 requests with an average duration of 1s.
+
+# Slides
+
+![Slides](docs/slides.png)
