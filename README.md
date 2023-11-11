@@ -30,7 +30,7 @@ The expected request duration for this endpoint is 1 second. When using k6, you'
 ### Platform Threads
 The following is the output of running 1,000 users against the endpoint with a gradual ramp-up and ramp-down phase.
 
-Notice the `http_req_duration` value averaging out to be 3.47s per request. This is due to the Platform threads block execution and do not allow further requests to be processed by the server.
+Notice the `http_req_duration` value averaging out to be 3.47s per request. This is due to the Platform threads blocking execution and not allowing further requests to be processed by the server.
 
 ```text
 ❯ k6 run script.js
